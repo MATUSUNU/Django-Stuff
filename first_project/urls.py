@@ -19,6 +19,7 @@ from first_app import views
 
 urlpatterns = [
     url(r'^$', views.index, name='index'),
-    url(r'^mynewindex/', include('first_app.urls')),
+    # url(r'^mynewindex/', include('first_app.urls')),
+    url(r'^first_app/', include('first_app.urls')),
     url(r'^admin/', admin.site.urls),
 ]
